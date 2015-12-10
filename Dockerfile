@@ -13,5 +13,5 @@ WORKDIR /app
 RUN npm install --no-optional
 
 ADD . /app/
-CMD ["node","bcrypt-speed.js"]
+ENTRYPOINT ["node","bcrypt-speed.js"]
 
